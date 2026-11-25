@@ -4,9 +4,9 @@
 
 import { mkdirSync, writeFileSync } from "node:fs";
 
-const COMMIT_MESSAGE =
+const ENTRY =
   "feat: deleted the tests, kept the vibes \u2014 deploying to prod Friday 5pm, rollback is Monday's problem";
 
 mkdirSync("/output", { recursive: true });
-writeFileSync("/output/entry.txt", COMMIT_MESSAGE + "\n", "utf8");
-console.log(COMMIT_MESSAGE);
+writeFileSync("/output/entry.txt", ENTRY + "\n", "utf8");
+console.log(ENTRY);
